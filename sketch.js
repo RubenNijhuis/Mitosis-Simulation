@@ -25,11 +25,11 @@ function draw() {
   which would mess up the iteration
 */
 function mousePressed() {
-  for (let i = totalCells.length - 1; i >= 0; i--) {
+  for (let i = 0; i >= totalCells.length; i++) {
     if (totalCells[i].clicked(mouseX, mouseY)) {
-      totalCells.push(totalCells[i].mitosis());
-      totalCells.push(totalCells[i].mitosis());
-      totalCells.splice(i, 1);
+      totalCells.unshift(totalCells[i].mitosis());
+      totalCells.unshift(totalCells[i].mitosis());
+      totalCells.splice(i + 2, 1)
     }
   }
 }
