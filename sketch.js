@@ -1,4 +1,4 @@
-const startCells = 5000;
+const startCells = 3000;
 let totalCells = [];
 
 //Draws the canvas ands pushes cells to the array as many times as 'startCells' defines
