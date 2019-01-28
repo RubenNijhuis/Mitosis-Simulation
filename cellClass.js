@@ -2,7 +2,7 @@ class Cell {
 	// The constructor declares the postion, the radius and the color of the cell
 	constructor(givenPosition, givenRadius, givenCellColor) {
 		this.position = givenPosition ? givenPosition.copy() : createVector(random(width), random(height));
-		this.radius = givenRadius || 5;
+		this.radius = givenRadius || 10;
 		this.cellColor = givenCellColor || color(random(100, 255), 0, random(100, 255), random(200, 250));
 	}
 
