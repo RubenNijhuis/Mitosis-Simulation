@@ -1,7 +1,7 @@
-const startCells = 50;
+const startCells = 100;
 let totalCells = [];
 
-//Draws the canvas ands pushes cells to the array as many times as 'startCells' defines
+// Draws the canvas ands pushes cells to the array as many times as 'startCells' defines
 function setup() {
   createCanvas(windowWidth, windowHeight);
   for (let i = 0; i < startCells; i++) {
