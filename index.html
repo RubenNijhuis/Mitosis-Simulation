@@ -1,58 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mitosis</title>
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-	<script src="libraries/p5.js"></script>
-	<script src="libraries/p5.dom.js"></script>
-	<script src="cellClass.js"></script>
-	<script src="sketch.js"></script>
-	<style>
-		html {
-			background-color: rgb(30,30,30);
-		}
-		body {
-			margin:0;
-			padding:0;
-		}
-		canvas {
-			position: fixed;
-			top: 0;
-			left: 0;
-			z-index: -1;
-		}
-		#text-block {
-			padding: 40px;
-			color: white;
-			width: 60%;
-			margin: auto;
-			line-height: 50px;
-			text-align: justify;
-		}
-		h1{
-			font-family: 'Gloria Hallelujah', cursive;
-			font-size: 70px;
-			text-decoration: underline;
-		}
-	</style>
+    <title>Mitosis - and cells</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="scripts/cellClass.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="libraries/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div id="text-block">
-		<h1>Exploring Mitosis</h1>
-		<p>
-			In cell biology, mitosis (/maɪˈtoʊsɪs/) is a part of 
-			the cell cycle when replicated chromosomes are 
-			separated into two new nuclei. In general, mitosis 
-			(division of the nucleus) is preceded by the S stage 
-			of interphase (during which the DNA is replicated) 
-			and is often accompanied or followed by cytokinesis, 
-			which divides the cytoplasm, organelles and cell membrane 
-			into two new cells containing roughly equal shares of 
-			these cellular components.[1] Mitosis and cytokinesis 
-			together define the mitotic (M) phase of an animal cell 
-			cycle—the division of the mother cell into two daughter 
-			cells genetically identical to each other.
-		</p>	
-	</div>
+    <div>
+        <span>If you click or tap the cells they split!</span>
+    </div>
+    <script>
+        const tl = anime.timeline();
+
+        tl.add({
+            targets: "div",
+            height: ['0vh', '2vh'],
+            easing: 'easeOutExpo',
+            duration: 800,
+        }).add({
+            targets: "div",
+            width: ['0vh', '40vh'],
+            easing: 'easeOutExpo',
+            duration: 350,
+        }).add({
+            targets: "div",
+            height: ['2vh', '5vh'],
+            easing: 'easeOutExpo',
+            duration: 600,
+        }).add({
+            targets: 'span',
+            opacity: [0, 1],
+            duration: 1200,
+        });
+    </script>
 </body>
+
 </html>
