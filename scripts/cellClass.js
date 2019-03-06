@@ -27,7 +27,6 @@ class Cell {
 
     // If the cell is clicked it will return a boolean which will determine later if it should 'mitosis'
     clicked(givenX, givenY) {
-        console.log("test");
         return (
             dist(this.position.x, this.position.y, givenX, givenY) < this.radius
         );
