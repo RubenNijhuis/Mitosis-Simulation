@@ -4,8 +4,7 @@
 <head>
     <title>Mitosis - and cells</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans&display=swap" rel="stylesheet">
     <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.js"></script>
     <script src="scripts/cellClass.js"></script>
@@ -15,23 +14,13 @@
 </head>
 
 <body>
-    <div>
-        <span>If you click or tap the cells they split!</span>
+    <div id="info">
+        <h1>Visualisatie van mitose</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates eius deserunt illum assumenda nostrum magnam delectus pariatur. Iure quos dolores quod alias omnis corrupti voluptates tempora perspiciatis debitis dolore!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates eius deserunt illum assumenda nostrum magnam delectus pariatur. Iure quos dolores quod alias omnis corrupti voluptates tempora perspiciatis debitis dolore!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates eius deserunt illum assumenda nostrum magnam delectus pariatur. Iure quos dolores quod alias omnis corrupti voluptates tempora perspiciatis debitis dolore!</p>
+        <h1><b>Als je op de cellen drukt dan splitten ze!</b></h1>
     </div>
-    <script>
-        const tl = anime.timeline();
-
-        tl.add({
-            targets: "div",
-            width: ['0vh', '40vh'],
-            easing: 'easeOutExpo',
-            duration: 1200,
-        }).add({
-            targets: 'span',
-            opacity: [0, 1],
-            duration: 800,
-        });
-    </script>
 </body>
 
 </html>

@@ -1,19 +1,37 @@
-html, body, #container {
+html, body {
     height: 100vh;
     width: 100vw;
     color: white;
     margin: 0;
 }
 
+#info {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: calc(100vw / 3);
+    padding: 1% 2.5%;
+    color: rgb(54, 54, 54);
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+#info h1 {
+    font-size: 2rem;
+}
+
+#info p {
+    font-size: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
 canvas {
     position: fixed;
     top: 0;
-    left: 0;
+    left: calc(100vw / 3);
     z-index: -1;
 }
 
 div {
-    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 5px 5px;
     padding: 2vh;
     height: 3vh;

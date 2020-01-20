@@ -7,8 +7,10 @@ let totalCells = [];
   cells to the array as many
   times as 'startCells' defines
 */
+let frame = 0;
+
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth / 3 * 2, windowHeight);
     for (let i = 0; i < initCells; i++) {
         totalCells.push(new Cell());
     }
@@ -16,10 +18,11 @@ function setup() {
 
 /* For each cell, run the class methods move() and show() */
 function draw() {
+    frame++
     background(30);
     noStroke();
     totalCells.forEach(cell => {
-        cell.move();
+        cell.move(frame);
         cell.show();
     });
 }
