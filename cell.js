@@ -19,21 +19,20 @@ class Cell {
         c.arc(this.x, this.y, this.diameter, 0, Math.PI * 2, false);
         c.fillStyle = this.color;
         c.fill();
-        // c.lineWidth = this.lineWidth;
-        // c.strokeStyle = this.stroke;
-        // c.stroke();
         c.closePath();
     }
 
     update() {
-        if (this.x - this.diameter <= 0 || this.x + this.diameter >= innerWidth) {
+        if (this.x + this.diameter > canvas.width || this.x - this.diameter < 0) {
             this.velocity.x = -this.velocity.x;
-        } else if (this.y + this.diameter > innerHeight || this.y - this.diameter < 0) {
-            this.velocity.y = -this.velocity.y;
-        } else {
-            this.x += this.velocity.x;
-            this.y += this.velocity.y;
         }
+
+        if (this.y + this.diameter > canvas.height || this.y - this.diameter < 0) {
+            this.velocity.y = -this.velocity.y;
+        }
+
+        this.x += this.velocity.x;
+        this.y += this.velocity.y;
 
         this.draw();
     }
