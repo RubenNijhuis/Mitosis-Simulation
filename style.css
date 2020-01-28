@@ -1,45 +1,53 @@
-html, body {
-    height: 100vh;
-    width: 100vw;
-    color: white;
-    margin: 0;
+body {
+  margin: 0;
+  user-select: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 #info {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    width: calc(100vw / 3);
-    padding: 1% 2.5%;
-    color: rgb(54, 54, 54);
-    text-align: justify;
-    box-sizing: border-box;
+  position: fixed;
+  margin: 0;
+  width: 300px;
+  left: 5vw;
+  top: 5vw;
 }
 
 #info h1 {
-    font-size: 2rem;
+  margin: 0;
+  font-size: 7rem;
+  font-family: "Anton", sans-serif;
 }
 
 #info p {
-    font-size: 1.2rem;
-    font-family: 'PT Sans', sans-serif;
+  margin: 0 0 3vh 0;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-canvas {
-    position: fixed;
-    top: 0;
-    left: calc(100vw / 3);
-    z-index: -1;
+#info button {
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(30, 30, 30);
+  background-color: rgba(195, 195, 195, 0.5);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px rgba(100, 100, 100, 1);
+  width: 100%;
 }
 
-div {
-    border-radius: 0px 0px 5px 5px;
-    padding: 2vh;
-    height: 3vh;
-    max-width: fit-content;
-    margin: auto;
-    text-align: center;
-    -moz-user-select: -moz-none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-    user-select: none;
+#info button:active {
+  box-shadow: 0 0px #666;
+  transform: translateY(10px);
 }

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Mitose - explained</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <title>Mitose uitgelegd</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans&display=swap" rel="stylesheet">
-    <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.dom.js"></script>
-    <script src="scripts/cell.js"></script>
-    <script src="scripts/sketch.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div id="info">
-        <h1>Visualisatie van mitose</h1>
-        <p>De mitose of kerndeling is het proces waarbij de chromosomenparen paarsgewijs uit elkaar gaan. Dit is een onderdeel van de celcyclus.</p>
-        <p>In de kern van een eukaryote cel liggen de chromosomen met het erfelijke materiaal en de kernlichaampjes (nucleoli) ingebed in een korrelige massa, het kernplasma. De kern wordt omgeven door een dubbele membraan, de kernmembraan.</p>
-        <p>Een kern kan niet zomaar in tweeën worden gedeeld. De chromosomen moeten bij een mitose onveranderd worden doorgegeven van moedercel naar dochtercel. De chromosomen, die (vrijwel) alle erfelijke informatie bevatten, worden dan ook verdubbeld of gekopieerd en daarna over beide cellen verdeeld. Deze erfelijke informatie is belangrijk voor de regeling van (vrijwel) alle biologische activiteiten in de cel en daarmee belangrijk voor de ontwikkeling en de functie van de cel. De verdubbeling van de chromosomen vindt plaats tijdens de S-fase van de celcyclus en maakt geen onderdeel uit van de mitose (de M-fase).</p>
-        <h1><b>Als je op de cellen drukt dan splitten ze!</b></h1>
+  <body>
+    <div id="overlay">
+      <div id="info">
+        <h1>MITOSE</h1>
+        <p>Klik op de cellen om ze te splitsen.</p>
+        <button>Refresh</button>
+      </div>
     </div>
-</body>
-
+    <canvas></canvas>
+    <script src="cell.js"></script>
+    <script src="sketch.js"></script>
+  </body>
 </html>
