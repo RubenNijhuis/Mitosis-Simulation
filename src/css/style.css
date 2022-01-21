@@ -3,7 +3,7 @@ body {
   user-select: none;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-#info {
+.info {
   position: fixed;
   margin: 0;
   width: 300px;
@@ -19,19 +19,19 @@ body {
   top: 5vw;
 }
 
-#info h1 {
+.info h1 {
   margin: 0;
   font-size: 7rem;
   font-family: "Anton", sans-serif;
 }
 
-#info p {
+.info p {
   margin: 0 0 3vh 0;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-#info button {
+.info button {
   display: block;
   padding: 15px 25px;
   font-size: 24px;
@@ -47,7 +47,7 @@ body {
   width: 100%;
 }
 
-#info button:active {
+.info button:active {
   box-shadow: 0 0px #666;
   transform: translateY(10px);
 }

@@ -1,5 +1,5 @@
 const button = document.querySelector("button");
-const overlay = document.querySelector("#overlay");
+const overlay = document.querySelector(".overlay");
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 
